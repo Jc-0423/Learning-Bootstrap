@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            color: #222;
+            text-align: center;
+        }
+
+        th,
+        td {
+            width: 80px;
+        }
+
+        /* tbody 所有tr的第一項 */
+
+        /* 2n+1項 */
+        tbody tr:nth-of-type(2n+1) {
+            background-color: lightcoral;
+        }
+
+        tbody tr:nth-of-type(2n) {
+            background-color: lightblue;
+        }
+
+        thead tr:nth-of-type(1) {
+            background-color: lightgoldenrodyellow;
+        }
+
+        tfoot tr:nth-of-type(n) {
+            background-color: lightseagreen;
+        }
+
+        tbody tr th:nth-of-type(1) {
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The thead, tbody, and tfoot elements</h1>
+    <!-- 表格 -->
+    <table>
+        <!-- 表頭 -->
+        <thead>
+            <!-- table row -->
+            <tr>
+                <!-- table row head 表頭中的每一欄位 -->
+                <th>Season</th>
+                <th>Month</th>
+                <th>Savings</th>
+                <th colspan="2">Costs</th>
+            </tr>
+        </thead>
+        <!-- 表格內容 -->
+        <tbody>
+            <!-- table row -->
+            <tr>
+                <!-- table data 表格中每一資料欄位 -->
+                <td rowspan="3" style="background-color: lightpink;">Spring</td>
+                <td>January</td>
+                <td>$100</td>
+                <td>$60</td>
+                <td>$40</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+                <td>$120</td>
+                <td>$40</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>$80</td>
+                <td>$120</td>
+                <td>$40</td>
+            </tr>
+            <tr>
+                <td>Summer</td>
+                <td>April</td>
+                <td>$100</td>
+                <td>$60</td>
+                <td>$40</td>
+            </tr>
+        </tbody>
+        <!-- 表尾 -->
+        <tfoot>
+            <tr>
+                <td colspan="2">Sum</td>
+                <td>$360</td>
+                <td>$360</td>
+                <td>$160</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS變數必須設在根元素 => :root, 就是html */
+        /* html{} */
+        :root{
+            /* CSS變數必須 --開頭 */
+            --try-bg-color: rgba(173, 30, 30, 0.764);
+            --try-font-color: rgba(255, 255, 255, 0.866);
+        }
+        .box{
+                            /* var => 變數 */
+            background-color: var(--try-bg-color);
+            color: var(--try-font-color);
+                                                    /* 找不到就用後面的顏色 */
+            background-color: var(--try-bg-color, rgba(218, 119, 7, 0.844));
+        }
+    </style>
+</head>
+<body>
+    <div class="box">AAA</div>
+</body>
+</html>

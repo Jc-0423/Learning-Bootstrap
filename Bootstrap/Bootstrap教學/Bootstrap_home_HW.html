@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./IMG/logo.png" alt="Bootstrap" width="80" height="80">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon" width="100" height="100">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav my-auto">
+                    <li class="nav-item text-center px-2">
+                        <a class="nav-link active" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item text-center px-2">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item text-center px-2">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item text-center px-2">
+                        <a class="nav-link" href="#">contact</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <div class="row">
+                            <div class="col"><a class="nav-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                        class="bi bi-cart3" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col" style="position: relative;"><button class="btn btn-white dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                    </svg>
+                                </button>
+                                <ul class="dropdown-menu border-white">
+                                    <li><a class="dropdown-item text-center" style="padding: 0;" href="#">Logn In</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="mb-5">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./IMG/Home_Pic1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./IMG/Home_Pic5.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./IMG/Home_Pic3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="py-3 text-center mx-auto fw-semibold" style="width: 80%;">
+            <span class="fs-2 pb-3">Raw Denim Heirloom Man Braid</span>
+            <br></br>
+            <span class="fs-5 pt-3">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub
+                indxgo juice poutine, ramps microdosing banh mi pug.</span>
+            <br></br>
+            <span class="fw-black" style="color: seagreen;"> __________ </span>
+        </div>
+        <div class="row container py-4 justify-content-center xl-justify-content-between  px-0">
+            <div class="card" style="width: 22rem; border-color: #fff;">
+                <div class="card-body row-cols-1 text-center">
+                    <div class="d-flex justify-content-center py-5" style="width: 100%; color: seagreen;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                            class="bi bi-shop" viewBox="0 0 16 16">
+                            <path
+                                d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z" />
+                        </svg>
+                    </div>
+                    <h4 class="card-title fw-semibold">Shooting Stars</h4>
+                    <p class="card-text fs-6 py-2">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                        taxidermy.
+                        Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+                    <a href="#" class="card-link fw-semibold" style="text-decoration: none; color: seagreen;">Learn More
+                        →</a>
+                </div>
+            </div>
+            <div class="card" style="width: 22rem; border-color: #fff;">
+                <div class="card-body row-cols-1 text-center">
+                    <div class="d-flex justify-content-center py-5" style="width: 100%; color: seagreen;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                            class="bi bi-award" viewBox="0 0 16 16">
+                            <path
+                                d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z" />
+                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z" />
+                        </svg>
+                    </div>
+                    <h4 class="card-title fw-semibold">The Catalyzer</h4>
+                    <p class="card-text fs-6 py-2">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                        taxidermy.
+                        Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+                    <a href="#" class="card-link fw-semibold" style="text-decoration: none; color: seagreen;">Learn More
+                        →</a>
+                </div>
+            </div>
+            <div class="card" style="width: 22rem; border-color: #fff;">
+                <div class="card-body row-cols-1 text-center">
+                    <div class="d-flex justify-content-center py-5" style="width: 100%; color: seagreen;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                            class="bi bi-pin-map" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z" />
+                            <path fill-rule="evenodd"
+                                d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                        </svg>
+                    </div>
+                    <h4 class="card-title fw-semibold">Neptune</h4>
+                    <p class="card-text fs-6 py-2">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                        taxidermy.
+                        Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+                    <a href="#" class="card-link fw-semibold" style="text-decoration: none; color: seagreen;">Learn More
+                        →</a>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center py-5">
+            <button type="button" class="btn btn-success fs-4"
+                style="--bs-btn-padding-y: 0.75rem; --bs-btn-padding-x: 8rem; --bs-btn-font-size: 1.25rem; border-radius: 0.25rem;">
+                Visit it
+            </button>
+        </div>
+        <!-- 六張圖片+字 -->
+        <div class="row d-flex align-items-center py-5">
+            <span class="col-12 col-md-3 h2 fw-semibold m-0">Master Cleanse Reliac Heirloom.</span>
+            <span class="col-12 col-md-9 fs-6 fw-medium lh-base">Whatever cardigan tote bag tumblr hexagon brooklyn
+                asymmetrical
+                gentrify, subway tile spanoke farm-to-table. Franzen you probably haven't heard of them man bun deep
+                jianbing selfies heirloom.</p>
+        </div>
+        <div class="row py-5">
+            <div class="col-12 col-md-6 p-3">
+                <div class="row">
+                    <div class="col-6 p-1">
+                        <img class="w-100" src="./img/883n.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-1">
+                        <img class="w-100" src="./img/ducati2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 p-1">
+                        <img class="w-100" src="./img/BMW2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 p-3">
+                <div class="row">
+                    <div class="col-12 p-1">
+                        <img class="w-100" src="./img/R_nineT.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 p-1">
+                        <img class="w-100" src="./img/ZX6R.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-1">
+                        <img class="w-100" src="./img/MV.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 表格 -->
+        <div class="py-5">
+            <div class="pb-5 text-center mx-auto fw-semibold" style="width: 80%;">
+                <span class="fs-2 pb-3">Pricing</span>
+                <br></br>
+                <span class="fs-5 pt-3">Banh mi cornhole echo park skateboard authentic crucifix neutra tilde lyft
+                    biodiesel artisan direct trade mumblecore 3 wolf moon twee</span>
+                <br></br>
+            </div>
+            <div class="py-3 text-center mx-auto" style="width: 80%;">
+                <table class="table">
+                    <thead>
+                        <tr class="table-success">
+                            <th scope="col">Plan</th>
+                            <th scope="col">Speed</th>
+                            <th scope="col">Storage</th>
+                            <th colspan="2">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Start</th>
+                            <td>5 Mb/s</td>
+                            <td>15 GB</td>
+                            <td class="text-end">Free</td>
+                            <td>
+                                <div class="form-check text-start">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                    </label>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">Pro</th>
+                            <td>25 Mb/s</td>
+                            <td>25 GB</td>
+                            <td class="text-end">$24</td>
+                            <td>
+                                <div class="form-check text-start">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios2" value="option2" checked>
+                                    <label class="form-check-label" for="exampleRadios2">
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Business</th>
+                            <td>36 Mb/s</td>
+                            <td>40 GB</td>
+                            <td class="text-end">$50</td>
+                            <td>
+                                <div class="form-check text-start">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios3" value="option3" checked>
+                                    <label class="form-check-label" for="exampleRadios3">
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Exclusive</th>
+                            <td>48 Mb/s</td>
+                            <td>120 GB</td>
+                            <td class="text-end">$72</td>
+                            <td>
+                                <div class="form-check text-start">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios4" value="option4" checked>
+                                    <label class="form-check-label" for="exampleRadios4">
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="d-flex justify-content-between py-2">
+                    <a href="#" class="card-link fw-semibold fs-5" style="text-decoration: none; color: seagreen;">Learn
+                        More
+                        →</a>
+                    <button type="button" class="btn btn-success fs-5">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex align-items-center py-5">
+            <div class="col-12 col-lg-6 h2 fw-semibold m-0 text-center">
+                <span>Pitchfork Kickstarter Taxidermy</span>
+                <br>
+                <span class="text-start" style="color: seagreen; padding-right: 55%;">———</span>
+            </div>
+            <span class="col-12 col-lg-6 h5 fw-medium lh-base m-0">Whatever cardigan tote bag tumblr hexagon
+                brooklyn
+                asymmetrical gentrify, subway
+                tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies
+                heirloom prism food truck ugh squid celiac humblebrag.</span>
+        </div>
+        <!-- 四張卡片 -->
+        <div class="row g-5 py-5 d-flex justify-content-around align-items-center">
+            <div class="col-12 col-xl-4 col-xxl-3 card p-4" style="width: 18rem; background-color: whitesmoke;">
+                <img src="./IMG/BMW2.jpg" class="card-img-top w-100" alt="...">
+                <a href="#" class="card-link fs-6 fw-medium" style="text-decoration: none;color: seagreen;">Scrambler Bobber</a>
+                <div class="card-body p-0 py-3">
+                    <h5 class="card-title m-0 pb-3 fw-bolder">Chichen Itza</h5>
+                    <p class="card-text lh-base fs-5">Fingerstache flexitarian street art 8-bit waistcoat.
+                        Distillery hexagon
+                        disrupt
+                        edison bulbche.</p>
+                </div>
+            </div>
+            <div class="col-12 col-xl-4 col-xxl-3 card p-4" style="width: 18rem; background-color: whitesmoke;">
+                <img src="./IMG/HarleyDavidson.jpg" class="card-img-top w-100" alt="...">
+                <a href="#" class="card-link fs-6 fw-medium" style="text-decoration: none;color: seagreen;">Forty
+                    Eight 48</a>
+                <div class="card-body p-0 py-3">
+                    <h5 class="card-title m-0 pb-3 fw-bolder">Chichen Itza</h5>
+                    <p class="card-text lh-base fs-5">Fingerstache flexitarian street art 8-bit waistcoat.
+                        Distillery hexagon
+                        disrupt
+                        edison bulbche.</p>
+                </div>
+            </div>
+            <div class="col-12 col-xl-4 col-xxl-3 card p-4" style="width: 18rem; background-color: whitesmoke;">
+                <img src="./IMG/BMW2.jpg" class="card-img-top w-100" alt="...">
+                <a href="#" class="card-link fs-6 fw-medium" style="text-decoration: none;color: seagreen;">R65
+                    Scrambler</a>
+                <div class="card-body p-0 py-3">
+                    <h5 class="card-title m-0 pb-3 fw-bolder">Chichen Itza</h5>
+                    <p class="card-text lh-base fs-5">Fingerstache flexitarian street art 8-bit waistcoat.
+                        Distillery hexagon
+                        disrupt
+                        edison bulbche.</p>
+                </div>
+            </div>
+            <div class="col-12 col-xl-4 col-xxl-3 card p-4" style="width: 18rem; background-color: whitesmoke;">
+                <img src="./IMG/ducati2.jpg" class="card-img-top w-100" alt="...">
+                <a href="#" class="card-link fs-6 fw-medium" style="text-decoration: none;color: seagreen;">SuperSport
+                    S</a>
+                <div class="card-body p-0 py-3">
+                    <h5 class="card-title m-0 pb-3 fw-bolder">Chichen Itza</h5>
+                    <p class="card-text lh-base fs-5">Fingerstache flexitarian street art 8-bit waistcoat.
+                        Distillery hexagon
+                        disrupt
+                        edison bulbche.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row container py-4 d-flex justify-content-center px-0 mx-auto" style="width: 60%;">
+            <div class="col-12 row py-5 d-flex justify-content-between">
+                <div class="col-12 col-lg-3 d-flex justify-content-center pb-5" style="color: seagreen;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor"
+                        class="bi bi-shop" viewBox="0 0 16 16">
+                        <path
+                            d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z" />
+                    </svg>
+                </div>
+                <div class="col-12 col-lg-9 d-flex align-items-center row">
+                    <h3 class="card-title fw-semibold">Shooting Stars</h3>
+                    <p class="card-text fs-5 py-2">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                        taxidermy.
+                        Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+                    <a href="#" class="card-link fw-semibold fs-5" style="text-decoration: none; color: seagreen;">Learn
+                        More
+                        →</a>
+                </div>
+
+            </div>
+            <hr>
+            <div class="col-12 row py-5 d-flex justify-content-between flex-md-row-reverse">
+                <div class="col-12 col-lg-3 d-flex justify-content-center pb-5" style="color: seagreen;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor"
+                        class="bi bi-award" viewBox="0 0 16 16">
+                        <path
+                            d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z" />
+                        <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z" />
+                    </svg>
+                </div>
+                <div class="col-12 col-lg-9 d-flex align-items-center row">
+                    <h3 class="card-title fw-semibold">The Catalyzer</h3>
+                    <p class="card-text fs-5 py-2">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                        taxidermy.
+                        Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+                    <a href="#" class="card-link fw-semibold fs-5" style="text-decoration: none; color: seagreen;">Learn
+                        More
+                        →</a>
+                </div>
+                
+            </div>
+            <hr>
+            <div class="col-12 row py-5 d-flex justify-content-between">
+                <div class="col-12 col-lg-3 d-flex justify-content-center pb-5" style="color: seagreen;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor"
+                        class="bi bi-pin-map" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z" />
+                        <path fill-rule="evenodd"
+                            d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                    </svg>
+                </div>
+                <div class="col-12 col-lg-9 d-flex align-items-center row">
+                    <h3 class="card-title fw-semibold">Neptune</h3>
+                    <p class="card-text fs-5 py-2">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                        taxidermy.
+                        Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+                    <a href="#" class="card-link fw-semibold fs-5" style="text-decoration: none; color: seagreen;">Learn
+                        More
+                        →</a>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-center py-5">
+                <button type="button" class="btn btn-success fs-4"
+                    style="--bs-btn-padding-y: 0.75rem; --bs-btn-padding-x: 8rem; --bs-btn-font-size: 1.25rem; border-radius: 0.25rem;">
+                    Visit it
+                </button>
+            </div>
+        </div>
+
+        <!-- 大卡 -->
+        <div class="row py-5">
+            <div class="col-12 col-lg-6 d-flex justify-content-center">
+                <img src="./IMG/500x500/MV2_WH_500x500px.jpg" class="w-100" alt="">
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="card h-100 p-3" style="border: 0;">
+                    <div class="card-body">
+                        <span class="py-">TRIUMPH</span>
+                        <h2 class="card-title pb-4 pt-1">Speed Triple 1200 RR</h2>
+                        <div class="d-flex justify-content-start">
+                            <div class="row m-0" style="padding-right: 16px;">
+                                <div class="col p-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"
+                                        style="color: seagreen;">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </div>
+                                <div class="col p-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"
+                                        style="color: seagreen;">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg></div>
+                                <div class="col p-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"
+                                        style="color: seagreen;">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg></div>
+                                <div class="col p-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"
+                                        style="color: seagreen;">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg></div>
+                                <div class="col p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-star-half" viewBox="0 0 16 16" style="color: seagreen;">
+                                        <path
+                                            d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                            <div class="px-2">
+                                <span>12,614 Reviews</span>
+                            </div>
+                            <div class="px-2">
+                                <span>|</span>
+                            </div>
+                            <div class="px-2">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-whatsapp" viewBox="0 0 16 16" style="color: seagreen;">
+                                        <path
+                                            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="px-2">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-messenger" viewBox="0 0 16 16" style="color:seagreen">
+                                        <path
+                                            d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.64.64 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.64.64 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76m5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="px-2">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-wechat" viewBox="0 0 16 16" style="color:seagreen">
+                                        <path
+                                            d="M11.176 14.429c-2.665 0-4.826-1.8-4.826-4.018 0-2.22 2.159-4.02 4.824-4.02S16 8.191 16 10.411c0 1.21-.65 2.301-1.666 3.036a.32.32 0 0 0-.12.366l.218.81a.6.6 0 0 1 .029.117.166.166 0 0 1-.162.162.2.2 0 0 1-.092-.03l-1.057-.61a.5.5 0 0 0-.256-.074.5.5 0 0 0-.142.021 5.7 5.7 0 0 1-1.576.22M9.064 9.542a.647.647 0 1 0 .557-1 .645.645 0 0 0-.646.647.6.6 0 0 0 .09.353Zm3.232.001a.646.646 0 1 0 .546-1 .645.645 0 0 0-.644.644.63.63 0 0 0 .098.356" />
+                                        <path
+                                            d="M0 6.826c0 1.455.781 2.765 2.001 3.656a.385.385 0 0 1 .143.439l-.161.6-.1.373a.5.5 0 0 0-.032.14.19.19 0 0 0 .193.193q.06 0 .111-.029l1.268-.733a.6.6 0 0 1 .308-.088q.088 0 .171.025a6.8 6.8 0 0 0 1.625.26 4.5 4.5 0 0 1-.177-1.251c0-2.936 2.785-5.02 5.824-5.02l.15.002C10.587 3.429 8.392 2 5.796 2 2.596 2 0 4.16 0 6.826m4.632-1.555a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0m3.875 0a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="card-text pt-5 fs-5">The nose down “cockpit” half-fairing, as Triumph calls it, with
+                            its round
+                            LED headlight and clip-on handlebars is reminiscent of 1960s-70s cafe racers, a tastefully
+                            dated design. But get beyond that and the 1200 RR is all cutting-edge hardware and software,
+                            top componentry matched to performance-enhancing electronics.
+                        </p>
+                        <div class="d-flex justify-content-start align-items-center ">
+                            <div class="fs-5 fw-medium" style="padding-right: 12px;">
+                                <span>Color </span>
+                            </div>
+                            <div class="px-1">
+                                <span
+                                    style="width: 25px;height: 25px;border-radius: 50%;border: 3px solid #222; background-color: silver; display: inline-block;">
+                                </span>
+                            </div>
+                            <div class="px-1">
+                                <span
+                                    style="width: 25px;height: 25px;border-radius: 50%;border: 3px solid #222; background-color: red; display: inline-block;">
+                                </span>
+                            </div>
+
+                            <div class="px-3 fs-5 fw-medium">
+                                <span> Years </span>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn btn-white dropdown-toggle border-success fs-5" type="button"
+                                    data-bs-toggle="dropdown">
+                                    2022
+                                </button>
+                                <ul class="dropdown-menu border-success">
+                                    <li><a class="dropdown-item fs-5" href="#">2023</a></li>
+                                    <li><a class="dropdown-item fs-5" href="#">2024</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <span class="col fs-5">US$ 20,950.00</span>
+                            </div>
+
+                            <div class="row">
+                                <a href="#" class="col btn btn-success fs-5">More</a>
+                                <a href="" class="col" style="text-decoration: none; color: seagreen;">
+                                    <span class="d-flex justify-content-center align-items-center"
+                                        style="width: 40px;height: 40px;border-radius: 50%;background-color: whitesmoke; display: inline-block;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
+                                            <path
+                                                d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 小卡 -->
+        <div class="row p-4 g-5 justify-content-center justify-content-md-around">
+            <div class="card p-0" style="width: 18rem;">
+                <img src="./IMG/500x500/400x300/ZX6R_WH_400x300px.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <span class="py-1" style="color: seagreen;">Kawasaki</span>
+                    <h5 class="card-title fs-4 py-1 fw-bolder">ZX6R</h5>
+                    <p class="card-text fs-5 fw-semibold">US$ 12,399</p>
+                </div>
+            </div>
+            <div class="card p-0" style="width: 18rem;">
+                <img src="./IMG/500x500/400x300/883n_WH_400x300px.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <span class="py-1" style="color: seagreen;">Harley Davidson</span>
+                    <h5 class="card-title fs-4 py-1 fw-bolder">XL 883N</h5>
+                    <p class="card-text fs-5 fw-semibold">US$ 11,055</p>
+                </div>
+            </div>
+            <div class="card p-0" style="width: 18rem;">
+                <img src="./IMG/500x500/400x300//BMW2_WH_400x300px.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <span class="py-1" style="color: seagreen;">BMW</span>
+                    <h5 class="card-title fs-4 py-1 fw-bolder">R65 Scrambler</h5>
+                    <p class="card-text fs-5 fw-semibold">US$ 13,502</p>
+                </div>
+            </div>
+            <div class="card p-0" style="width: 18rem;">
+                <img src="./IMG/500x500/400x300/BMW_WH_400x300px.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <span class="py-1" style="color: seagreen;">BMW</span>
+                    <h5 class="card-title fs-4 py-1 fw-bolder">S1000RR</h5>
+                    <p class="card-text fs-5 fw-semibold">US$ 15,622</p>
+                </div>
+            </div>
+            <div class="card p-0" style="width: 18rem;">
+                <img src="./IMG/500x500/400x300/ducati2_WH_400x300px.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <span class="py-1" style="color: seagreen;">Ducati</span>
+                    <h5 class="card-title fs-4 py-1 fw-bolder">SuperSport</h5>
+                    <p class="card-text fs-5 fw-semibold">US$ 21,481</p>
+                </div>
+            </div>
+            <div class="card p-0" style="width: 18rem;">
+                <img src="./IMG/500x500/400x300/Ducati_WH_400x300px.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <span class="py-1" style="color: seagreen;">Ducati</span>
+                    <h5 class="card-title fs-4 py-1 fw-bolder">Panigale 1299 S</h5>
+                    <p class="card-text fs-5 fw-semibold">US$ $25,795</p>
+                </div>
+            </div>
+            <div class="card p-0" style="width: 18rem;">
+                <img src="./IMG/500x500/400x300/HarleyDavidson_WH_400x300px.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <span class="py-1" style="color: seagreen;">Harley Davidson</span>
+                    <h5 class="card-title fs-4 py-1 fw-bolder">Forty Eight 48</h5>
+                    <p class="card-text fs-5 fw-semibold">US$ 10,999</p>
+                </div>
+            </div>
+            <div class="card p-0" style="width: 18rem;">
+                <img src="./IMG/500x500/400x300/R_nineT_WH_400x300px.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <span class="py-1" style="color: seagreen;">BMW</span>
+                    <h5 class="card-title fs-4 py-1 fw-bolder">R Nine T</h5>
+                    <p class="card-text fs-5 fw-semibold">US$ 19,995</p>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <div class="ratio ratio-16x9 py-5 container-fluid postion-relative" style="margin-bottom: 20%;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5689.90877486842!2d11.263879924482481!3d44.51608767250371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd6b2a41a5c61%3A0x5b3cf87f906c108f!2z5p2c5Y2h6L-q5Y2a54mp6aSo!5e0!3m2!1szh-TW!2stw!4v1718259247582!5m2!1szh-TW!2stw"
+            width="1600" height="900" style="border:0; height: 135%;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="card position-absolute w-50"
+            style="height: auto;top: 70%; left: 50%; transform: translate(-50%,-50%);">
+            <div class="card-body">
+                <h5 class="card-title fs-5 py-2">Feedback</h5>
+                <p class="card-text fs-6 py-1 text-break m-0">Post-ironic portland.</p>
+                <div class="pb-2">
+                    <label for="exampleFormControlInput1" class="form-label fs-5">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="pb-2">
+                    <label for="exampleFormControlTextarea1" class="form-label fs-5">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                </div>
+                <a href="#" class="btn btn-success w-100 py-2">Submit</a>
+                <div class="pt-3">
+                    <span class="text-break">@ 2024</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer m-0 text-center">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top container-fluid px-0 w-100">
+            <div class="col-12 col-sm-12 mb-3 text-end>
+                <a href=" /"
+                class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none justify-content-center">
+                <img src="./IMG/logo.png" alt="" style="width: 50px;">
+                </a>
+                <p class="text-body-secondary">© 2024</p>
+            </div>
+
+            <div class="col mb-3 mx-auto">
+                <h5>About US</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">History</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">News</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Events</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Investor</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Leadership</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Values</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Accessibility</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Education</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Environment</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Diversity</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Account</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Manage account</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Award</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

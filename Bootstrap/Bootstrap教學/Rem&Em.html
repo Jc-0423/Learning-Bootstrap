@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            /* 
+                body => em
+                html => rem
+            */
+            font-size: 20px;
+        }
+        .px16 {
+            font-size: 16px;
+        }
+        .px20 {
+            font-size: 16px;
+        }
+        .px24 {
+            font-size: 16px;
+        }
+        .px28 {
+            font-size: 16px;
+        }
+        .em1dot2{
+            font-size: 1.2em;
+        }
+        .rem1dot2{
+            font-size: 1.2rem;
+        }
+        .percent120{
+            font-size: 120%;
+        }
+        .hr{
+            /* 只能Margin */
+            margin:0, 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- px 絕對單位，設多少就是多少 -->
+    <div class="px16">
+        16px
+        <div class="px20">
+            20px
+            <div class="px24">
+                24px
+                <div class="px28">
+                    28px
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr">
+
+    <!-- em 相對單位，每個子元素以倍數乘以父元素 -->
+    <div class="em1dot2">
+        1.2em (16px*1.2)
+        <div class="em1dot2">
+            1.2em (16px*1.2)*1.2
+            <div class="em1dot2">
+                1.2em
+                <div class="em1dot2">
+                    1.2em
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- rem 相對單位，每個子元素以倍數乘以根元素 -->
+    <div class="rem1dot2">
+        1.2rem (16px*1.2)
+        <div class="rem1dot2">
+            1.2rem (16px*1.2)*1.2
+            <div class="rem1dot2">
+                1.2rem
+                <div class="rem1dot2">
+                    1.2rem
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- % 相對單位，每個子元素以倍數乘以根元素 -->
+    <div class="percent120">
+        120percent (16px*1.2)
+        <div class="percent120">
+            120percent (16px*1.2)*1.2
+            <div class="percent120">
+                120percent
+                <div class="percent120">
+                    120percent
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
